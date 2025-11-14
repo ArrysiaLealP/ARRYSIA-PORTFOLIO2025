@@ -1,0 +1,29 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    color:#000080;
+    background-color: rgb(243, 229, 220);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200px;
+    margin-top: 160px;
+}
+
+img {
+    margin-top: 150px;
+    margin-bottom: 85px;
+    border: 3px solid rgb(252, 112, 5);
+    height: 550px;
+}
+
+.elevado {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elevado:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 8px 16px rgb(238, 109, 5);
+}
