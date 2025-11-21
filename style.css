@@ -719,18 +719,11 @@ footer a:hover {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  
 }
 
 .anexo-item {
   width: 32%;
-  height: 60%;
   text-align: center;
-
-}
-.anexo-item img:hover{
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
 }
 
 .anexo-label {
@@ -741,37 +734,11 @@ footer a:hover {
 }
 
 .anexo-item img {
-  height: 100%;
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   object-fit: cover;
 }
-
-/* mantém os 5 ícones em uma única linha, centralizados */
-.botoes-atividades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: -80px; /* ← controla o espaçamento entre os ícones */
-}
-
-/* garante que os links fiquem como blocos com a imagem dentro */
-.botoes-atividades a {
-  display: block;
-  text-align: center;
-}
-
-/* estiliza só as imagens para ficarem redondas */
-.botoes-atividades a img {
-  display: block;
-  width: 400px;           /* ajuste o tamanho se quiser menor/grande */
-  height: 400px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-
 
 
 
