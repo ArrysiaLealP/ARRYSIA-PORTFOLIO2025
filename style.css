@@ -501,6 +501,7 @@ body {
 
 
 
+
 body {
   background-color: #f5ede3;
   font-family: Arial, sans-serif;
@@ -718,8 +719,9 @@ footer a:hover {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: px;
 }
+
 
 .anexo-item {
   width: 32%;
@@ -740,6 +742,45 @@ footer a:hover {
   object-fit: cover;
 }
 
+/* mantém os 5 ícones em uma única linha, centralizados */
+.botoes-atividades {
+  display: flex;
+  flex-wrap: nowrap;      /* -> não quebra para a linha de baixo */
+  justify-content: center;
+  align-items: center;
+  gap: -40px;              /* espaço entre os ícones */
+  padding: 20px;
+  overflow-x: auto;       /* permite rolar horizontalmente em telas pequenas */
+}
+
+/* garante que os links fiquem como blocos com a imagem dentro */
+.botoes-atividades a {
+  display: block;
+  text-align: center;
+}
+
+/* estiliza só as imagens para ficarem redondas */
+.botoes-atividades a img {
+  display: block;
+  width: 400px;           /* ajuste o tamanho se quiser menor/grande */
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.anexo-item img {
+  width: 400px;       /* ajuste o tamanho aqui */
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;    /* mãozinha ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.anexo-item img:hover {
+  transform: scale(1.05);              /* aumenta um pouquinho */
+  box-shadow: 0 8px 20px rgb(239, 200, 155); /* sombra mais forte */
+}
 
 
 
